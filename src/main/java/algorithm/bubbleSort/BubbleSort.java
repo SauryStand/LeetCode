@@ -21,11 +21,32 @@ public class BubbleSort {
         }
     }
 
-    public static void UpdateBubble(int[] array) {
-
-    }
 
     public static void PerfectBubble(int[] array) {
+
+        int low, up, index, i;
+        low = 0;
+        up = array.length - 1;
+        index = low;
+        while(up > low){
+            for(i = low; i < up ; i++){
+                if(array[i] > array[i+1]){
+                    swap(array[i],array[i+1]);
+                    index = i;
+                }
+            }
+            //记录最后一个交换的位置
+            up = index;
+            for(i = up; i > low ; i--){
+                if(array[i]<array[i+1]){
+                    swap(array[i],array[i+1]);
+                    index = i;
+                }
+            }
+            //记录最后一个交换的位置
+            low = index;
+        }
+
 
     }
 
