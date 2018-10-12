@@ -1,3 +1,5 @@
+package leetcode.other;
+
 import java.util.Scanner;
 
 public class shuixianhua{

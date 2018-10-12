@@ -1,4 +1,9 @@
-public class Solution {
+package leetcode.other;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class TwoSum {
      
      public static void main(String[] args){
          int[] array = {5,6,1,4,7,9,8};
@@ -12,11 +17,11 @@ public class Solution {
         int temp;
         Integer index;
         Map<Integer,Integer> map = new HashMap<Integer,Integer>(nums.length);
-        //´æ½øhashMap
+        //ï¿½ï¿½ï¿½hashMap
         for(int i = 0 ; i < nums.length ; i ++){
             map.put(nums[i],i);
         }
-        //¶þ·Ö²éÕÒ
+        //ï¿½ï¿½ï¿½Ö²ï¿½ï¿½ï¿½
         for(int i = 0 ; i < nums.length - 1 ; i ++){
             temp = target - nums[i];
             index = map.get(temp);

@@ -1,7 +1,7 @@
-package com.testing;
+package leetcode.other;
 import java.util.Scanner;
 /**
-String ÀàÖÐ×Ô´øµÄ·½·¨È¥²Ù×÷×Ö·û´®
+String ï¿½ï¿½ï¿½ï¿½ï¿½Ô´ï¿½ï¿½Ä·ï¿½ï¿½ï¿½È¥ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
 **/
 public class StringTools{
 	public static void main(String[] args){
@@ -9,10 +9,10 @@ public class StringTools{
 		String b  = new String();
 		String c  = new String();
 		Scanner scaner = new Scanner(System.in);
-		a = caner.nextLine();//»ñÈ¡ÊäÈëµÄ×Ö·û´®
-		b = a.trim();//È¥³ýaÖÐµÄ¿Õ¸ñ£¬¸³Öµµ½bÖÐ
+		a = caner.nextLine();//ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½
+		b = a.trim();//È¥ï¿½ï¿½aï¿½ÐµÄ¿Õ¸ñ£¬¸ï¿½Öµï¿½ï¿½bï¿½ï¿½
 		if(b.equals("hello")){
-			c = b.substring(0,5);//·Ö¸î³öÀ´
+			c = b.substring(0,5);//ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½
 		}else{
 			c = "";
 		}

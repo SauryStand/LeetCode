@@ -1,5 +1,7 @@
+package leetcode.other;
+
 /**
-大小写转换
+锟斤拷小写转锟斤拷
 **/
 public class changeChar{
 	
