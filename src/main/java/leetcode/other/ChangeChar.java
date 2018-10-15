@@ -3,12 +3,12 @@ package leetcode.other;
 /**
 ��Сдת��
 **/
-public class changeChar{
+public class ChangeChar {
 	
-	public static void main(String[] args){
+	public static String main(String[] args){
 		StringBuffer str1 = new StringBuffer();
 		String str2 = "sdfhSDFHGgsdroggdlkjSERTGS";
-		char c[] str2.toCharArray();
+		char c[] = str2.toCharArray();
 		for(int i=0;i<str2.length();i++){
 			char ch = c[i];
 			if(Character.isUpperCase(ch)){
