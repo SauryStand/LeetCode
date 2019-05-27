@@ -1,3 +1,4 @@
+package algorithm.zuichangdizengzixulie;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -27,7 +28,7 @@ public class ZuichangSubSequence {
 
     public static void main(String[] args){
         List<Integer> list = init(10);
-        List<Integer> listLen = new ArrayList<>();
+        List<Integer> listLen = new ArrayList<Integer>();
         for(int o : list){
             listLen.add(1);
         }

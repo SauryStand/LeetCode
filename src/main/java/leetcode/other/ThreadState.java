@@ -23,7 +23,7 @@ public class ThreadState implements Runnable{
 		notify();
 	}
 	
-	pbulic void run(){
+	public void run(){
 		//����ʹ���쳣������Ϊ�� ��ֹ���ܳ��ֵ��ж��쳣
 		//����κ��߳��ж��˵�ǰ���̣߳��������쳣
 		try{

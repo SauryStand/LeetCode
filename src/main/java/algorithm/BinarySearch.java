@@ -121,6 +121,7 @@ public class BinarySearch {
         int[] temp;
         temp = new int[f[k] - 1];
         //memcpy(temp, arr, n * sizeofInt());
+        return 0;
     }
 
 
