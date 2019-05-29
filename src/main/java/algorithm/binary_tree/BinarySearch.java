@@ -4,7 +4,7 @@
  * @author: voyager2511
  * @create: 2018/09/25 17:29
  */
-package algorithm;
+package algorithm.binary_tree;
 
 
 import java.nio.ByteBuffer;

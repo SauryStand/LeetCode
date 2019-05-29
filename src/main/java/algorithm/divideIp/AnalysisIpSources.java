@@ -1,4 +1,4 @@
-package com.ip;
+package algorithm.divideIp;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -16,11 +16,11 @@ public class AnalysisIpSources {
 		System.out.println("-->>Create file: end, current time is: " + df.format(new Date()));
 		System.out.println("-->>Mapping large files into small files, start...");
 		DivideIpFile.divideIpsFile();
-		System.out.println("-->>Mapping large files into small files, end. Total time cost£º" + getMS(startTime) + " millisecond");  
+		System.out.println("-->>Mapping large files into small files, end. Total time costï¿½ï¿½" + getMS(startTime) + " millisecond");  
 		System.out.println("-->>Analysing all small files, start...");
 		DivideIpFile.calculate();
 		System.out.println("-->>Analysing all small files, end. " + getMS(startTime) + " millisecond");
-		System.out.println("-->>Total time cost£º" + getMS(startTime) + "millisecond");  
+		System.out.println("-->>Total time costï¿½ï¿½" + getMS(startTime) + "millisecond");  
 		
 	}
 	

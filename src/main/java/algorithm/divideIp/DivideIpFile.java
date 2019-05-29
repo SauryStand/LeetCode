@@ -1,4 +1,4 @@
-package com.ip;
+package algorithm.divideIp;
 
 import java.io.BufferedReader;
 import java.io.File;
@@ -21,7 +21,7 @@ public class DivideIpFile {
 	protected final static String FOLDER = "E:/Source_codes/My_java_projects/ipDivide/temp1/file_set/";   
 	
 	public static void main(String[] args) {
-		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//ÉèÖÃÈÕÆÚ¸ñÊ½
+		SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");//ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½Ê½
 		System.out.println("-->>analysis file:start,current time is: " + df.format(new Date()));
 		calculate();
 		//divideIpsFile();
@@ -34,7 +34,7 @@ public class DivideIpFile {
 	}
 
 	/**
-	 * ÔÚÕâÀï²ÉÈ¡µÄÊÇ¾ÍÊÇHashÈ¡Ä£µÄ·½Ê½£¬½«×Ö·û´®µÄipµØÖ·¸ø×ª»»³ÉÒ»¸ö³¤ÕûÊý£¬²¢½«Õâ¸öÊý¶Ô1000È¡Ä££¬½«Ä£Ò»ÑùµÄip·Åµ½Í¬Ò»¸öÎÄ¼þ£¬ÕâÑù¾ÍÄÜ¹»Éú³É1000¸öÐ¡ÎÄ¼þ£¬Ã¿¸öÎÄ¼þ¾ÍÖ»ÓÐ1M¶à£¬ÔÚÕâÀïÒÑ¾­ÊÇ×ã¹»Ð¡µÄÁË¡£
+	 * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½ï¿½ï¿½Ç¾ï¿½ï¿½ï¿½HashÈ¡Ä£ï¿½Ä·ï¿½Ê½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ipï¿½ï¿½Ö·ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½Ò»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1000È¡Ä£ï¿½ï¿½ï¿½ï¿½Ä£Ò»ï¿½ï¿½ï¿½ï¿½ipï¿½Åµï¿½Í¬Ò»ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ü¹ï¿½ï¿½ï¿½ï¿½ï¿½1000ï¿½ï¿½Ð¡ï¿½Ä¼ï¿½ï¿½ï¿½Ã¿ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ö»ï¿½ï¿½1Mï¿½à£¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ã¹»Ð¡ï¿½ï¿½ï¿½Ë¡ï¿½
 	 * @param strIp
 	 * @return
 	 */

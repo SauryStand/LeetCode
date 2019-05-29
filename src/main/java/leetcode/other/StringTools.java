@@ -9,7 +9,7 @@ public class StringTools{
 		String b  = new String();
 		String c  = new String();
 		Scanner scaner = new Scanner(System.in);
-		a = caner.nextLine();//��ȡ������ַ���
+		a = scaner.nextLine();//��ȡ������ַ���
 		b = a.trim();//ȥ��a�еĿո񣬸�ֵ��b��
 		if(b.equals("hello")){
 			c = b.substring(0,5);//�ָ����
