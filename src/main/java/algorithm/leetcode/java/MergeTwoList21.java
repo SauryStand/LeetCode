@@ -1,4 +1,4 @@
-package algorithm.leetcode;
+package algorithm.leetcode.java;
 
 /**
  * @ClassName MergeTwoList
