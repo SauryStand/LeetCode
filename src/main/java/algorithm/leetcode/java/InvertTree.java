@@ -1,7 +1,6 @@
 package algorithm.leetcode.java;
 
 import java.util.Stack;
-import org.slf4j.Logger;
 
 /**
  * @ClassName InvertTree
