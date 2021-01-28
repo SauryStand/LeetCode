@@ -2,13 +2,6 @@ package algorithm.leetcode.java;
 
 import java.util.Stack;
 
-/**
- * @ClassName InvertTree
- * @Description Todo
- * @Date 15/01/2021 17:59
- * @Author voyager2511
- * @Email zhoujianfeng@codemao.cn
- */
 public class InvertTree {
     public class TreeNode {
         int val;

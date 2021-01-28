@@ -1,10 +1,27 @@
 package algorithm.leetcode.java;
-/**
- * @ClassName ReverseList
- * @Description Todo
- * @Date 18/01/2021 16:24
- * @Author voyager2511
- * @Email zhoujianfeng@codemao.cn
-*/
+
 public class ReverseList {
+
+    public class ListNode {
+        int val;
+        ListNode next;
+        ListNode(int x) {
+            val = x;
+        }
+    }
+
+    public ListNode reverseList(ListNode head) {
+        ListNode pre = null;
+        ListNode curr = head;
+        ListNode temp = null;
+        while (curr != null) {
+            temp = curr.next;
+            curr.next = pre;
+            pre = curr;
+            curr = temp;
+        }
+        return pre;
+    }
+
+
 }
