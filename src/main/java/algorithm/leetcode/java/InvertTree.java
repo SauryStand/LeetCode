@@ -57,4 +57,33 @@ public class InvertTree {
         return root;
     }
 
+    /**
+     * 先序遍历用stack就可以了
+     * @param head
+     * @return
+     */
+    public Stack<TreeNode> invertTree3(TreeNode head) {
+        if (head == null) {
+            return new Stack<>();
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(head);
+        while (!stack.isEmpty()) {
+            head = stack.pop();
+            System.out.println(head.val);
+            if (head.right != null) {
+                stack.push(head.right);
+            }
+            if (head.left != null) {
+                stack.push(head.left);
+            }
+        }
+
+        return stack;
+    }
+
+
+
+
+
 }

@@ -23,5 +23,14 @@ public class ReverseList {
         return pre;
     }
 
+    public ListNode reverseByRecursion(ListNode head) {
+        if (head.next == null) {
+            return head;
+        }
+        ListNode last = reverseByRecursion(head.next);
+        head.next.next = head;
+        head.next = null;
+        return last;
+    }
 
 }
