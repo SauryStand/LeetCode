@@ -4,7 +4,7 @@
  * @author: voyager2511
  * @create: 2018/09/27 15:55
  */
-package algorithm.chain;
+package algorithm.leetcode.chain;
 
 public class RevertLink {
 

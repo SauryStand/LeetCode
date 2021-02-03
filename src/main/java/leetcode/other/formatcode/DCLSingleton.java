@@ -10,7 +10,7 @@
 https://github.com/Viscent/javamtia
 http://www.broadview.com.cn/31065
 */
-package algorithm.formatcode;
+package leetcode.other.formatcode;
 
 public class DCLSingleton {
   /*

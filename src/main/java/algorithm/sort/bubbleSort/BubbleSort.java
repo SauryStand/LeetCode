@@ -4,7 +4,7 @@
  * @author: voyager2511
  * @create: 2018/09/20 20:26
  */
-package algorithm.bubbleSort;
+package algorithm.sort.bubbleSort;
 
 public class BubbleSort {
     /**

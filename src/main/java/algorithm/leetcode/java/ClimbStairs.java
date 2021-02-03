@@ -1,12 +1,5 @@
 package algorithm.leetcode.java;
 
-/**
- * @ClassName ClimbStairs
- * @Description Todo
- * @Date 27/01/2021 17:18
- * @Author voyager2511
- * @Email zhoujianfeng@codemao.cn
- */
 public class ClimbStairs {
 
     public int climbStairs(int n) {

@@ -4,7 +4,7 @@
  * @author: voyager2511
  * @create: 2019/04/17 12:07
  */
-package algorithm.selectSort;
+package algorithm.sort.selectSort;
 
 public class SelectSort {
 

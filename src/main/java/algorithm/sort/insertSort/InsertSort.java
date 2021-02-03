@@ -1,9 +1,23 @@
-package algorithm.insertSort;
+package algorithm.sort.insertSort;
+
 
 //����λ�ô���ʼ������
 //insert sort
 public class InsertSort {
 
+    public static void main(String[] args) {
+        int[] a = new int[]{1,4,7,2,9,7,12,8,3};
+        for(int i = 0; i < a.length; i++) {
+            int index = i;
+            int temp = a[i];
+            while (index > 0 && a[index - 1] > temp) {
+                a[index] = a[index - 1];
+                index--;
+            }
+            a[index] = temp;
+        }
+
+    }
 
     public static void insertSort(int[] data) {
         for (int i = 1; i < data.length; i++) {
