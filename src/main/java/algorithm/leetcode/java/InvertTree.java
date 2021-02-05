@@ -62,7 +62,7 @@ public class InvertTree {
      * @param head
      * @return
      */
-    public Stack<TreeNode> invertTree3(TreeNode head) {
+    public Stack<TreeNode> PreTree(TreeNode head) {
         if (head == null) {
             return new Stack<>();
         }
@@ -83,7 +83,27 @@ public class InvertTree {
     }
 
 
+    public Stack<TreeNode> InTree(TreeNode head) {
+        if (head == null) {
+            return new Stack<>();
+        }
+        Stack<TreeNode> stack = new Stack<>();
+        stack.push(head);
+        while (!stack.isEmpty() || head != null) {
+            if (head != null) {
+                stack.push(head);
+                head = head.left;
+            } else {
+                head = stack.pop();
+                System.out.println(head.val);
+                head = head.right;
+            }
+        }
+        return stack;
+    }
 
-
+    /**
+     * lru缓存
+     */
 
 }
