@@ -18,6 +18,7 @@ import java.util.concurrent.atomic.AtomicInteger;
  * 3. 但当队列已满且仍然 workCount < maximumPoolSize 时，不再直接走拒绝策略，而是创建非核心线程，直到 workCount = maximumPoolSize，再走拒绝策略。
  *
  *
+ * https://www.cnblogs.com/flashsun/p/14368520.html
  * 关于线程池的案例https://github.com/aofeng/threadpool4j
  *
  */
