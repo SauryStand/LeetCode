@@ -21,7 +21,7 @@ public class PriorityDemo {
 
     public static class LowPriority extends Thread{
         static int count = 0;
-
+        @Override
         public void run() {
             while (true){
                 synchronized (PriorityDemo.class){
