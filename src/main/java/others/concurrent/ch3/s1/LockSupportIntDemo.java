@@ -2,14 +2,7 @@ package others.concurrent.ch3.s1;
 
 import java.util.concurrent.locks.LockSupport;
 
-
-public class LockSupportDemo {
-    //重入锁
-    /**
-     根据系统调度，一个线程会倾向于再次获取已经持有的锁，这种分配方式高效，但无公平性可言。
-
-
-     */
+public class LockSupportIntDemo {
 
     public static Object u = new Object();
     static ChangeObjectThread t1 = new ChangeObjectThread("t1");
@@ -25,19 +18,22 @@ public class LockSupportDemo {
             synchronized (u) {
                 System.out.println("in " + getName());
                 LockSupport.park();
+                if (Thread.interrupted()) {
+                    System.out.println(getName() + "被中断了");
+                }
             }
+            System.out.println(getName() + "执行结束");
         }
+
+
     }
 
     public static void main(String[] args) throws InterruptedException {
         t1.start();
         Thread.sleep(100);
         t2.start();
-        //阻塞原语
-        LockSupport.unpark(t1);
+        t1.interrupt();
         LockSupport.unpark(t2);
-        t1.join();
-        t2.join();
     }
 
 
