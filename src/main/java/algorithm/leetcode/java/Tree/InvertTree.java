@@ -1,4 +1,4 @@
-package algorithm.leetcode.java;
+package algorithm.leetcode.java.Tree;
 
 import java.util.Stack;
 
