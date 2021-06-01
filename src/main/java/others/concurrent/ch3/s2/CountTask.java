@@ -18,6 +18,7 @@ public class CountTask extends RecursiveTask<Long> {
         this.end = end;
     }
 
+    @Override
     protected Long compute() {
         long sum = 0;
         boolean canCompute = (end - start) < THRESHOLD;

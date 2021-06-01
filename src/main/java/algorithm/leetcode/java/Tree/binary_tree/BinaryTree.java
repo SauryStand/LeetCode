@@ -4,7 +4,7 @@
  * @author: voyager2511
  * @create: 2019/04/01 14:17
  */
-package algorithm.binary_tree;
+package algorithm.leetcode.java.Tree.binary_tree;
 
 
 /**

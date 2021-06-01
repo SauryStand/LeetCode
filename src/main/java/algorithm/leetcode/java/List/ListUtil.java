@@ -4,7 +4,7 @@
  * @author: voyager2511
  * @create: 2019/05/29 14:20
  */
-package algorithm;
+package algorithm.leetcode.java.List;
 
 import java.util.*;
 
